@@ -43,8 +43,8 @@ def violin_plot(class0_1, class1_1, class2_1):
     plt.savefig('violin_plot.pdf', bbox_inches='tight')
     plt.show()
 
-class0 = [data0[0], data2[0], data3[0]]
-class1 = [data0[1], data2[1], data3[1]]
-class2 = [data0[2], data2[2], data3[2]]
+class0 = np.random.normal(3, 2.5, (3, 100))
+class1 = np.random.normal(3, 2.5, (3, 100))
+class2 = np.random.normal(3, 2.5, (3, 100))
 
 violent_plot(class0, class1, class2)
